@@ -30,8 +30,8 @@ NTSTATUS HideProcess(int processId)
     nextEntry->Blink = prevEntry;
 
     return STATUS_SUCCESS;
-}```
-
+}
+```
 ---
 
 ## Disclaimer
@@ -41,3 +41,5 @@ I do **not** condone or support malicious use of this information.
 Use responsibly, in controlled environments, and at your own risk.
 
 ---
+
+
