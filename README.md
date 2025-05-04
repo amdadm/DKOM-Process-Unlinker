@@ -13,7 +13,7 @@ NTSTATUS HideProcess(int processId)
     PEPROCESS targetProcess = nullptr;
 
     // Look up the process object by its PID
-    NTSTATUS status = ace_spoof(PsLookupProcessByProcessId)((HANDLE)processId, &targetProcess);
+    NTSTATUS status = PsLookupProcessByProcessId((HANDLE)processId, &targetProcess);
     if (!NT_SUCCESS(status) || !targetProcess)
     {
         return STATUS_UNSUCCESSFUL;
